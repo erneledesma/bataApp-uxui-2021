@@ -1,0 +1,117 @@
+/*
+1. Posicionamiento.
+2. Modelo de caja.
+3. Tipografía.
+4. Visualización.
+5. Otros
+*/
+
+:root {
+    /*Colors*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #ffe9d4;
+    --secondary-blue: #1a94f7;
+    --warm-black:#201e1c;
+    --black: #282623;
+    --grey: #757575;
+    --light-grey: #808080;
+    --off-white:#faf8f7;
+    --just-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    display:grid;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    border: 2px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(
+        207.8deg,
+         var(--black) 16.69%, 
+         var(--bitcoin-orange) 100%);
+}
+
+header img {
+    width: 151px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width:900px;
+    height: 218px;
+    margin-top:50px;
+    text-align: center;
+    align-self: center
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+
+}
+
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange)
+} 
+
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background: var(--off-white);
+
+    /*Sombras*/
+    box-shadow: 0px 4px, 8px rgba(89, 73 ,30, 0.20);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header--title-container .header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
